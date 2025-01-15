@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C++",
+      "type": "shell",
+      "command": "/usr/bin/clang++", // Clang 컴파일러 경로
+      "args": [
+        "-std=c++17", // C++ 표준
+        "-Wall",
+        "-o",
+        "main", // 출력 파일 이름
+        "main.cpp" // 컴파일할 소스 파일
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
